@@ -747,37 +747,73 @@ h3 {
 }
 
 @media (max-width: 430px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     font-size: 18px;
   }
 
   .hero {
-    padding: 10px 12px 24px;
+    padding: 10px 10px 22px;
   }
 
   .hero-pr {
     margin-bottom: 14px;
   }
 
+  .hero-inner,
+  .hero-copy,
+  .hero-side {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 14px;
+  }
+
   h1 {
-    font-size: clamp(40px, 10.4vw, 45px);
+    max-width: 100%;
+    font-size: clamp(31px, 8.6vw, 36px);
+    line-height: 1.14;
+    overflow-wrap: anywhere;
   }
 
   .hero-subtitle {
-    font-size: clamp(27px, 6.5vw, 30px);
+    font-size: clamp(21px, 5.8vw, 25px);
+    line-height: 1.32;
+  }
+
+  .hero-question {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .hero-lead {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .trust-badges {
+    gap: 7px;
+  }
+
+  .trust-badges span {
+    font-size: 13px;
+    padding: 8px 10px;
   }
 
   .hero-side {
-    padding: 8px;
-    border-radius: 22px;
+    padding: 7px;
+    border-radius: 18px;
   }
 
   .hero-visual {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 1.72 / 1;
     min-height: 0;
     background: linear-gradient(135deg, #e9fbff 0%, #f7fffd 48%, #cfeff7 100%);
   }
@@ -795,33 +831,38 @@ h3 {
   .quick-card {
     width: 100%;
     margin: 0;
-    padding: 13px;
-    border-radius: 0 0 18px 18px;
+    padding: 11px;
+    border-radius: 0 0 15px 15px;
   }
 
   .quick-card h2 {
-    font-size: 21px;
+    margin-bottom: 9px;
+    font-size: 19px;
     line-height: 1.28;
   }
 
   .quick-metrics {
-    gap: 6px;
+    gap: 5px;
   }
 
   .quick-metrics span {
-    min-height: 38px;
-    font-size: 13px;
+    min-height: 34px;
+    padding: 6px 4px;
+    border-radius: 11px;
+    font-size: 12px;
   }
 
   .quick-copy {
-    font-size: 15px;
-    line-height: 1.55;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .mini-cta {
     width: 100%;
-    min-height: 46px;
-    font-size: 16px;
+    min-height: 42px;
+    margin-top: 9px;
+    font-size: 15px;
   }
 
   .section {
