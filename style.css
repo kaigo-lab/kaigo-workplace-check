@@ -771,20 +771,37 @@ h3 {
     font-size: 18px;
   }
 
-  .hero-visual,
+  .hero-side {
+    padding: 8px;
+    border-radius: 22px;
+  }
+
+  .hero-visual {
+    aspect-ratio: 16 / 10;
+    min-height: 0;
+    background: linear-gradient(135deg, #e9fbff 0%, #f7fffd 48%, #cfeff7 100%);
+  }
+
   .hero-visual::before {
-    min-height: 214px;
+    display: none;
+    min-height: 0;
+  }
+
+  .hero-visual img {
+    object-fit: contain;
+    object-position: center bottom;
   }
 
   .quick-card {
     width: 100%;
     margin: 0;
-    padding: 14px;
+    padding: 13px;
     border-radius: 0 0 18px 18px;
   }
 
   .quick-card h2 {
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 1.28;
   }
 
   .quick-metrics {
@@ -797,7 +814,8 @@ h3 {
   }
 
   .quick-copy {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.55;
   }
 
   .mini-cta {
