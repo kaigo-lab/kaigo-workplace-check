@@ -568,6 +568,35 @@ h3 {
   gap: 8px;
 }
 
+.voice-list {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 13px;
+}
+
+.voice-list p {
+  margin: 0;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff, #f4fbfa);
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.55;
+}
+
+.voice-list p::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 9px;
+  border-radius: 999px;
+  background: var(--orange);
+  vertical-align: 0.08em;
+}
+
 .safe-copy,
 .hint-copy {
   margin: 0 0 13px;
