@@ -783,15 +783,15 @@ h3 {
   }
 
   body {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .hero {
-    padding: 10px 10px 22px;
+    padding: 9px 10px 20px;
   }
 
   .hero-pr {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .hero-inner,
@@ -807,13 +807,13 @@ h3 {
 
   h1 {
     max-width: 100%;
-    font-size: clamp(31px, 8.6vw, 36px);
-    line-height: 1.14;
+    font-size: clamp(28px, 7.5vw, 32px);
+    line-height: 1.18;
     overflow-wrap: anywhere;
   }
 
   .hero-subtitle {
-    font-size: clamp(21px, 5.8vw, 25px);
+    font-size: clamp(19px, 5.2vw, 22px);
     line-height: 1.32;
   }
 
@@ -824,7 +824,7 @@ h3 {
 
   .hero-lead {
     font-size: 16px;
-    line-height: 1.72;
+    line-height: 1.62;
   }
 
   .trust-badges {
@@ -866,7 +866,7 @@ h3 {
 
   .quick-card h2 {
     margin-bottom: 9px;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.28;
   }
 
@@ -895,14 +895,28 @@ h3 {
   }
 
   .section {
-    margin-top: 12px;
-    padding: 18px 12px;
+    margin-top: 10px;
+    padding: 16px 11px;
+    border-radius: 19px;
+  }
+
+  .section-head {
+    margin-bottom: 11px;
+  }
+
+  h2 {
+    font-size: clamp(28px, 7vw, 32px);
+    line-height: 1.34;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   .cta-button {
-    min-height: 74px;
-    font-size: 21px;
-    padding-inline: 18px;
+    min-height: 68px;
+    font-size: 20px;
+    padding: 16px 16px;
   }
 
   .count-badge {
@@ -912,10 +926,50 @@ h3 {
   }
 
   .diagnosis-options label {
-    font-size: 19px;
+    min-height: 60px;
+    padding: 13px;
+    font-size: 18px;
   }
 
   .service-head h3 {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .diagnosis-top p,
+  .short-copy,
+  .safe-copy,
+  .hint-copy,
+  .faq-item p,
+  .final-cta p {
+    font-size: 17px;
+    line-height: 1.58;
+  }
+
+  .voice-list,
+  .problem-grid,
+  .diagnosis-options,
+  .service-quick-grid,
+  .cta-stack {
+    gap: 8px;
+  }
+
+  .voice-list p,
+  .problem-card,
+  .faq-item,
+  .service-card {
+    padding: 12px;
+  }
+
+  .safe-copy,
+  .hint-copy {
+    padding: 11px 12px;
+  }
+
+  .diagnosis-next p {
+    font-size: 18px;
+  }
+
+  .result-card h3 {
+    font-size: 30px;
   }
 }
